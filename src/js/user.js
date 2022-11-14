@@ -66,5 +66,11 @@ export default class User {
     return this.jupiterAge;
   };
 
+  remainingLifeJupiter() {
+    let remainingLifeJupiter;
+    remainingLifeJupiter = parseInt(this.remainingLifeEarth()/11.86);
+    return remainingLifeJupiter;
+  }
+
 
 }
