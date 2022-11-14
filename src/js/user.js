@@ -16,7 +16,7 @@ export default class User {
 
   remainingLifeMercury() {  
     // always positive number, maybe differentiate with if statement if life exceeded
-    let remainingLifeMercury
+    let remainingLifeMercury;
     if (this.lifeExp > this.earthAge) {
     remainingLifeMercury = parseInt(this.remainingLifeEarth()/0.24);
     } else if (this.lifeExp < this.earthAge) {
@@ -30,6 +30,12 @@ export default class User {
   venusAge() {    
     this.venusAge = parseInt(this.earthAge/0.62);
     return this.venusAge;
+  }
+
+  remainingLifeVenus() {
+    let remainingLifeVenus;
+    remainingLifeVenus = parseInt(this.remainingLifeEarth()/0.62);
+    return remainingLifeVenus
   }
 
   marsAge() {    
