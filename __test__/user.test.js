@@ -33,8 +33,8 @@ describe('User', () => {
   });
 
   test('6. It will calculate the correct venusAge based on the earthAge input', () => {
-    newUser.mercuryAge();
-    expect(newUser.mercuryAge).toEqual(48.3870);
+    newUser.venusAge();
+    expect(newUser.venusAge).toEqual(48.38709677419355);
   })
 
 })
