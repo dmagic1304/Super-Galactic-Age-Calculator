@@ -72,9 +72,10 @@ export default class User {
     remainingLifeJupiter = parseInt(this.remainingLifeEarth()/11.86);
     } else if (this.lifeExp < this.earthAge) {
     remainingLifeJupiter = Math.abs(parseInt(this.remainingLifeEarth()/11.86));  
+    } else {
+    remainingLifeJupiter = 'You have 0 years left, your time is up!'
     }
     return remainingLifeJupiter;
   }
-
 
 }
