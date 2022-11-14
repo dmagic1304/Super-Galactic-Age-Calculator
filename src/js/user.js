@@ -49,7 +49,13 @@ export default class User {
     return this.marsAge;
   };
 
-  
+  remainingLifeMars() {
+    let remainingLifeMars;
+    remainingLifeMars = parseInt(this.remainingLifeEarth()/1.88);
+    return remainingLifeMars;
+  }
+
+
 
   jupiterAge() {
     this.jupiterAge = parseInt(this.earthAge/11.86);
