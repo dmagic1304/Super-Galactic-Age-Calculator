@@ -12,4 +12,9 @@ export default class User {
     this.venusAge = parseInt(this.earthAge/0.62);
     return this.venusAge;
   }
+
+  marsAge() {    
+    this.marsAge = this.earthAge;
+    return this.marsAge;
+  }
 }
