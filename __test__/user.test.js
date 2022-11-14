@@ -70,6 +70,11 @@ describe('User', () => {
     const remainingLife = newUser.remainingLiveMercury();
     expect(remainingLife).toBeTruthy();
   })
+
+  test('14. It will calculate expected remaining years to live on Mercury based on users inputs', () => {
+    const remainingLife = newUser.remainingLiveMercury();
+    expect(remainingLife).toEqual(187);
+  })
   
 
 })
