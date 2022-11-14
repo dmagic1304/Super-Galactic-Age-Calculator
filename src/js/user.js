@@ -14,7 +14,7 @@ export default class User {
   }
 
   marsAge() {    
-    this.marsAge = this.earthAge;
+    this.marsAge = parseInt(this.earthAge/1.88);
     return this.marsAge;
   }
 }

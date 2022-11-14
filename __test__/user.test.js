@@ -27,7 +27,7 @@ describe('User', () => {
     expect(newUser.mercuryAge).toEqual(129);
   })
 
-  test('5. It will give the user a venusAge property and return it', () => {
+  test('5. It will give the user a venusAge property', () => {
     newUser.venusAge();
     expect(newUser.venusAge).toBeTruthy();
   });
@@ -42,14 +42,19 @@ describe('User', () => {
     expect(newUser.venusAge).toEqual(48);
   })
 
-  test('8. It will give the user a marsAge property and return it', () => {
+  test('8. It will give the user a marsAge property', () => {
     newUser.marsAge();
     expect(newUser.marsAge).toBeTruthy();
   });
 
-  test('6. It will calculate the correct marsAge as integer based on the earthAge input', () => {
+  test('9. It will calculate the correct marsAge as integer based on the earthAge input', () => {
     newUser.marsAge();
     expect(newUser.marsAge).toEqual(15);
+  })
+
+  test('10. It will give the user a jupiterAge property', () => {
+    newUser.jupiterAge();
+    expect(newUser.jupiterAge).toBeTruthy();
   })
   
 
