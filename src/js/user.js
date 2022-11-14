@@ -34,7 +34,11 @@ export default class User {
 
   remainingLifeVenus() {
     let remainingLifeVenus;
+    if (this.lifeExp > this.earthAge) {
     remainingLifeVenus = parseInt(this.remainingLifeEarth()/0.62);
+    } else if (this.lifeExp < this.earthAge) {
+    remainingLifeVenus = Math.abs(parseInt(this.remainingLifeEarth()/0.62));  
+    }
     return remainingLifeVenus
   }
 
