@@ -1,9 +1,10 @@
 import User from './../src/js/user.js'
 
 describe('User', () => {
+  let newUser;
 
   beforeEach(() => {
-    let newUser = new User (30);
+    newUser = new User (30);
   });
 
   test('1. It will create a new user with current age property', () => {
