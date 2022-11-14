@@ -20,4 +20,10 @@ describe('User', () => {
     newUser.mercuryAge();
     expect(newUser.mercuryAge).toEqual(125);
   })
+
+  test('3. It will assign the mercuryAge value as integer', () => {
+    newUser.earthAge = 31;
+    newUser.mercuryAge();
+    expect(newUser.mercuryAge).toEqual(129);
+  })
 })

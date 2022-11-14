@@ -3,7 +3,7 @@ export default class User {
     this.earthAge = age;
   }
 
-  mercuryAge() {
-    this.mercuryAge = 30;
+  mercuryAge() {    
+    this.mercuryAge = this.earthAge/0.24;
   }
 }
