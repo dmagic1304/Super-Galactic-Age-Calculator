@@ -1,6 +1,7 @@
 export default class User {  
-  constructor(age) {
+  constructor(age, averageLifeExpectancy) {
     this.earthAge = age;
+    this.lifeExp = averageLifeExpectancy;
   }
 
   mercuryAge() {    
