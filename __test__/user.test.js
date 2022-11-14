@@ -42,6 +42,11 @@ describe('User', () => {
     expect(newUser.venusAge).toEqual(48);
   })
 
+  test('8. It will give the user a marsAge property and return it', () => {
+    newUser.marsAge();
+    expect(newUser.marsAge).toBeTruthy();
+  });
+
   
 
 })
