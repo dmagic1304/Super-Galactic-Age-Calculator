@@ -4,7 +4,7 @@ describe('User', () => {
   let newUser;
 
   beforeEach(() => {
-    newUser = new User (30);
+    newUser = new User (30, 75);
   });
 
   test('1. It will create a new user with earth age property', () => {
@@ -61,6 +61,10 @@ describe('User', () => {
     newUser.jupiterAge();
     expect(newUser.jupiterAge).toEqual(2);
   });
+
+  test('12. It will add average life expectancy as property to user object based on user input', () => {
+    expect(newUser.lifeExp).toEqual(75);
+  })
   
 
 })
