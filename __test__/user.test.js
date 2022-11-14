@@ -37,4 +37,9 @@ describe('User', () => {
     expect(newUser.venusAge).toEqual(48.38709677419355);
   })
 
+  test('7. It will assign the venusAge value as integer', () => {
+    newUser.venusAge();
+    expect(newUser.venusAge).toEqual(48);
+  })
+
 })
