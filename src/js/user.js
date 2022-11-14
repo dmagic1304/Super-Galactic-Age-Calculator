@@ -17,4 +17,9 @@ export default class User {
     this.marsAge = parseInt(this.earthAge/1.88);
     return this.marsAge;
   }
+
+  jupiterAge() {
+    this.jupiterAge = this.earthAge;
+    return this.jupiterAge;
+  }
 }
