@@ -19,13 +19,13 @@ describe('User', () => {
   test('3. It will calculate the correct mercuryAge based on the earthAge input', () => {
     newUser.mercuryAge();
     expect(newUser.mercuryAge).toEqual(125);
-  })
+  });
 
   test('4. It will assign the mercuryAge value as integer', () => {
     newUser.earthAge = 31;
     newUser.mercuryAge();
     expect(newUser.mercuryAge).toEqual(129);
-  })
+  });
 
   test('5. It will give the user a venusAge property', () => {
     newUser.venusAge();
@@ -35,12 +35,12 @@ describe('User', () => {
   test('6. It will calculate the correct venusAge based on the earthAge input', () => {
     newUser.venusAge();
     expect(newUser.venusAge).toEqual(48);
-  })
+  });
 
   test('7. It will assign the venusAge value as integer', () => {
     newUser.venusAge();
     expect(newUser.venusAge).toEqual(48);
-  })
+  });
 
   test('8. It will give the user a marsAge property', () => {
     newUser.marsAge();
@@ -50,17 +50,17 @@ describe('User', () => {
   test('9. It will calculate the correct marsAge as integer based on the earthAge input', () => {
     newUser.marsAge();
     expect(newUser.marsAge).toEqual(15);
-  })
+  });
 
   test('10. It will give the user a jupiterAge property', () => {
     newUser.jupiterAge();
     expect(newUser.jupiterAge).toBeTruthy();
-  })
+  });
 
-   test('11. It will calculate the correct jupiterAge as integer based on the earthAge input', () => {
+  test('11. It will calculate the correct jupiterAge as integer based on the earthAge input', () => {
     newUser.jupiterAge();
     expect(newUser.jupiterAge).toEqual(2);
-  })
+  });
   
 
 })
