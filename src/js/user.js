@@ -5,5 +5,6 @@ export default class User {
 
   mercuryAge() {    
     this.mercuryAge = parseInt(this.earthAge/0.24);
+    return this.mercuryAge;
   }
 }
