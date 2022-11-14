@@ -65,6 +65,11 @@ describe('User', () => {
   test('12. It will add average life expectancy as property to user object based on user input', () => {
     expect(newUser.lifeExp).toEqual(75);
   })
+
+  test('13. It will return expected remaining years to live on Mercury', () => {
+    const remainingLife = newUser.remainingLiveMercury();
+    expect(remainingLife).toBeTruthy();
+  })
   
 
 })
