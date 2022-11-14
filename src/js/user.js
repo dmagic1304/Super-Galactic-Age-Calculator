@@ -68,7 +68,11 @@ export default class User {
 
   remainingLifeJupiter() {
     let remainingLifeJupiter;
+    if (this.lifeExp > this.earthAge) {
     remainingLifeJupiter = parseInt(this.remainingLifeEarth()/11.86);
+    } else if (this.lifeExp < this.earthAge) {
+    remainingLifeJupiter = Math.abs(parseInt(this.remainingLifeEarth()/11.86));  
+    }
     return remainingLifeJupiter;
   }
 
