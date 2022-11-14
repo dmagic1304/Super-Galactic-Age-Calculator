@@ -110,4 +110,10 @@ describe('User', () => {
     expect(remainingLife).toEqual(23);
   });
 
+  test('21. It will return years as a positive number if the life expectancy is exceeded', () => {
+    newUser.earthAge = 80;
+    const remainingLife = newUser.remainingLifeMars();
+    expect(remainingLife).toEqual(2);
+  });
+
 })
