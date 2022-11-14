@@ -51,7 +51,12 @@ export default class User {
 
   remainingLifeMars() {
     let remainingLifeMars;
+    
+    if (this.lifeExp > this.earthAge) {
     remainingLifeMars = parseInt(this.remainingLifeEarth()/1.88);
+    } else if (this.lifeExp < this.earthAge) {
+    remainingLifeMars = Math.abs(parseInt(this.remainingLifeEarth()/1.88));  
+    }
     return remainingLifeMars;
   }
 
