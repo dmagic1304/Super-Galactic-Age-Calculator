@@ -6,7 +6,7 @@ export default class User {
 
   remainingLifeEarth() {
     let remainingLifeEarth = parseInt(this.lifeExp - this.earthAge)
-    return remainingLifeEarth
+    return remainingLifeEarth;
   };
 
   mercuryAge() {    
@@ -24,7 +24,7 @@ export default class User {
     } else {
       remainingLifeMercury = 'You have 0 years left, your time is up!'
     }
-    return remainingLifeMercury
+    return remainingLifeMercury;
   };
 
   venusAge() {    
@@ -41,7 +41,7 @@ export default class User {
     } else {
       remainingLifeVenus = 'You have 0 years left, your time is up!'
     }
-    return remainingLifeVenus
+    return remainingLifeVenus;
   };
 
   marsAge() {    
@@ -50,12 +50,13 @@ export default class User {
   };
 
   remainingLifeMars() {
-    let remainingLifeMars;
-    
+    let remainingLifeMars;    
     if (this.lifeExp > this.earthAge) {
     remainingLifeMars = parseInt(this.remainingLifeEarth()/1.88);
     } else if (this.lifeExp < this.earthAge) {
     remainingLifeMars = Math.abs(parseInt(this.remainingLifeEarth()/1.88));  
+    } else {
+    remainingLifeMars = 'You have 0 years left, your time is up!'
     }
     return remainingLifeMars;
   }
