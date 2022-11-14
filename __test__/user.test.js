@@ -56,6 +56,11 @@ describe('User', () => {
     newUser.jupiterAge();
     expect(newUser.jupiterAge).toBeTruthy();
   })
+
+   test('11. It will calculate the correct jupiterAge as integer based on the earthAge input', () => {
+    newUser.jupiterAge();
+    expect(newUser.jupiterAge).toEqual(2);
+  })
   
 
 })
