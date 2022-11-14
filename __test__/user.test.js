@@ -80,7 +80,13 @@ describe('User', () => {
     newUser.earthAge = 80;
     const remainingLife = newUser.remainingLifeMercury();
     expect(remainingLife).toEqual(20);
-  }); 
+  });
+  
+  test('16. It will return your time is up message if current age equals expectancy', () => {
+    newUser.earthAge = 75;
+    const remainingLife = newUser.remainingLifeMercury();
+    expect(remainingLife).toEqual('You have 0 years left, your time is up!');
+  });
   
 
 })
