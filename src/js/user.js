@@ -19,7 +19,11 @@ export default class User {
     let remainingLifeMercury
     if (this.lifeExp > this.earthAge) {
     remainingLifeMercury = parseInt(this.remainingLifeEarth()/0.24);
-    } else if {this.lifeExp > this.earthAge}
+    } else if (this.lifeExp < this.earthAge) {
+    remainingLifeMercury = Math.abs(parseInt(this.remainingLifeEarth()/0.24));
+    } else {
+      remainingLifeMercury = 'You have 0 years left, your time is up!'
+    }
     return remainingLifeMercury
   }
 
