@@ -47,6 +47,10 @@ describe('User', () => {
     expect(newUser.marsAge).toBeTruthy();
   });
 
+  test('6. It will calculate the correct marsAge as integer based on the earthAge input', () => {
+    newUser.marsAge();
+    expect(newUser.marsAge).toEqual(15);
+  })
   
 
 })
