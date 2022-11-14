@@ -122,4 +122,9 @@ describe('User', () => {
     expect(remainingLife).toEqual('You have 0 years left, your time is up!');
   });
 
+  test('23. It will calculate expected remaining years to live on Jupiter based on users inputs', () => {
+    const remainingLife = newUser.remainingLifeJupiter();
+    expect(remainingLife).toEqual(3);
+  });
+
 })

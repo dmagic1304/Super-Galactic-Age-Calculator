@@ -61,8 +61,6 @@ export default class User {
     return remainingLifeMars;
   }
 
-
-
   jupiterAge() {
     this.jupiterAge = parseInt(this.earthAge/11.86);
     return this.jupiterAge;
