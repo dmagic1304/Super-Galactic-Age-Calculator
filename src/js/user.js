@@ -9,6 +9,11 @@ export default class User {
     return this.mercuryAge;
   }
 
+  remainingLiveMercury() {
+    let remainingLife = 1;
+    return remainingLife
+  }
+
   venusAge() {    
     this.venusAge = parseInt(this.earthAge/0.62);
     return this.venusAge;
