@@ -11,7 +11,7 @@ describe('User', () => {
    expect(newUser.currentAge).toEqual(30);
   })
 
-  test('2. It will give the user a mercuryAge property with the calculated value'), () => {
-
+  test('2. It will give the user a mercuryAge property'), () => {
+    expect(newUser.mercuryAge).toBeTruthy();
   }
 })
