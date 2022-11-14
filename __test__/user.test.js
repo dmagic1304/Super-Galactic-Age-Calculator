@@ -67,12 +67,12 @@ describe('User', () => {
   })
 
   test('13. It will return expected remaining years to live on Mercury', () => {
-    const remainingLife = newUser.remainingLiveMercury();
+    const remainingLife = newUser.remainingLifeMercury();
     expect(remainingLife).toBeTruthy();
   })
 
   test('14. It will calculate expected remaining years to live on Mercury based on users inputs', () => {
-    const remainingLife = newUser.remainingLiveMercury();
+    const remainingLife = newUser.remainingLifeMercury();
     expect(remainingLife).toEqual(187);
   })
   

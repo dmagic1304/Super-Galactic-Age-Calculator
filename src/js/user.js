@@ -4,14 +4,19 @@ export default class User {
     this.lifeExp = averageLifeExpectancy;
   }
 
+  remainingLifeEarth() {
+    let remainingLifeEarth = parseInt(this.lifeExp - this.earthAge)
+    return remainingLifeEarth
+  }
+
   mercuryAge() {    
     this.mercuryAge = parseInt(this.earthAge/0.24);
     return this.mercuryAge;
   }
 
-  remainingLiveMercury() {
-    let remainingLife = 1;
-    return remainingLife
+  remainingLifeMercury() {  
+    let remainingLifeMercury = parseInt(this.remainingLifeEarth()/0.24);
+    return remainingLifeMercury
   }
 
   venusAge() {    
