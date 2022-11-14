@@ -64,17 +64,23 @@ describe('User', () => {
 
   test('12. It will add average life expectancy as property to user object based on user input', () => {
     expect(newUser.lifeExp).toEqual(75);
-  })
+  });
 
   test('13. It will return expected remaining years to live on Mercury', () => {
     const remainingLife = newUser.remainingLifeMercury();
     expect(remainingLife).toBeTruthy();
-  })
+  });
 
   test('14. It will calculate expected remaining years to live on Mercury based on users inputs', () => {
     const remainingLife = newUser.remainingLifeMercury();
     expect(remainingLife).toEqual(187);
-  })
+  });
+
+  test('15. It will display years as a positive number if the life expectancy is exceeded', () => {
+    newUser.earthAge = 80;
+    const remainingLife = newUser.remainingLifeMercury();
+    expect(remainingLife).toEqual(20);
+  }); 
   
 
 })
