@@ -12,7 +12,7 @@ describe('User', () => {
   });
 
   test('2. It will give the user a mercuryAge property', () => {
-    mercuryAge();
+    newUser.mercuryAge();
     expect(newUser.mercuryAge).toBeTruthy();
   });
 })
