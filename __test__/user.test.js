@@ -9,9 +9,10 @@ describe('User', () => {
 
   test('1. It will create a new user with current age property', () => {
    expect(newUser.currentAge).toEqual(30);
-  })
+  });
 
   test('2. It will give the user a mercuryAge property', () => {
+    mercuryAge();
     expect(newUser.mercuryAge).toBeTruthy();
-  })
+  });
 })
