@@ -9,7 +9,7 @@ export default class User {
   }
 
   venusAge() {    
-    this.venusAge = this.earthAge/0.62;
+    this.venusAge = parseInt(this.earthAge/0.62);
     return this.venusAge;
   }
 }
