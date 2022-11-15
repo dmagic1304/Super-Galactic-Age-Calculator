@@ -8,6 +8,13 @@ function handleSubmit() {
   const earthAge = document.getElementById('earth-age').value;
   const expectedLifespan = document.getElementById('expected-lifespan');
   let newUser = new User(earthAge, expectedLifespan);
-
+  displayResults(newUser);
 }
 
+function displayResults(user) {
+  document.getElementById('mercury-age').innerText = `${user.mercuryAge()} years old`
+  if (user)
+}
+
+
+document.querySelector('form').addEventListener('submit', handleSubmit);
