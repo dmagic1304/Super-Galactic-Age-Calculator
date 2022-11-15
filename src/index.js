@@ -8,5 +8,6 @@ function handleSubmit() {
   const earthAge = document.getElementById('earth-age').value;
   const expectedLifespan = document.getElementById('expected-lifespan');
   let newUser = new User(earthAge, expectedLifespan);
-  
+
 }
+
