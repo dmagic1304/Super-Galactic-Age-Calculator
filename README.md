@@ -1,8 +1,8 @@
-# _Programming Language Suggester_
+# _Super Galactic Age Calculator_
 
 #### By _**Dominik Magic**_
 
-#### _A website that suggests which programming language to learn first._<p>&nbsp;</p>  
+#### _A web application that transferes earth solar years to other planets._<p>&nbsp;</p>  
 
 ## Technologies Used
 
@@ -10,25 +10,27 @@
 * _CSS_
 * _JavaScript_
 * _Bootstrap_
+* _Webpack_
+* _Eslint_
+* _Babel_
+* _Jest_
 
 ## Description
 
-_This website was created by for purpose of demonstrating the use of event listeners and event handlers, JS branching, input forms and use of WEBapi object properties. The website will collect users input and based on the input values, suggest a programing language that the user should learn first._
+_This website was created by for purpose of demonstrating the proper TDD workflow using Jest. The website will collect users age and life expectancy on earth and calculate those values based on solar year lengths on different planets._
 
 ## Setup/Installation Requirements
 
-* _Clone [this](https://github.com/dmagic1304/Programming-Language-Suggester) repositiory to your desktop_
-* _Open the cloned portfolio folder located on your desktop_
-* _Open the index.html file in your browser_
+* _Clone [this](https://github.com/dmagic1304/Super-Galactic-Age-Calculator) repositiory to your desktop_
+* _Open the terminal in portfolio folder located on your desktop_
+* _Run "npm install" command in the terminal to install required dependencies_
+* _Once the install is compleated, run "npm run start" command in the terminal to open the application in browser_
+* _To run the test using Jest, simply run "npm test" command in the terminal_
 
 
 ## Known Bugs
 
-* _No known bugs at this time_
-
-## GitHub Pages
-
-[https://dmagic1304.github.io/Programming-Language-Suggester/](https://dmagic1304.github.io/Programming-Language-Suggester/)
+* _UI for the application not compleated_
 
 ## License
 
