@@ -76,6 +76,5 @@ export default class User {
     remainingLifeJupiter = 'You have 0 years left, your time is up!'
     }
     return remainingLifeJupiter;
-  }
-
+  };
 }
