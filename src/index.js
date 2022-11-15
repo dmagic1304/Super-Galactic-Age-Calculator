@@ -13,7 +13,7 @@ function handleSubmit() {
 
 function displayResults(user) {
   document.getElementById('mercury-age').innerText = `${user.mercuryAge()} years old`
-  if (user)
+  document.getElementById('mercury-expectancy').innerText = (user.earthAge > user.lifeExp ? `you already lived ${user.remainingLifeMercury()} years longer than expected.` : `it is expected that you will live another ${user.remainingLifeMercury()} years.`);
 }
 
 
